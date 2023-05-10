@@ -1,0 +1,29 @@
+.header{
+    background-color:aqua;
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.cart-div{
+    float: right;
+    position: relative;
+}
+
+.cart-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.cart-div span{
+    position: absolute;
+    background-color: orange;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    top: -6px;
+}
