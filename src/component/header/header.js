@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 export default function Header(){
 
     const result = useSelector((state) => state.cartData)
-    console.log("result",result)
    return (
     <div className="header">
         <Link to="/temp" >Temp Link</Link>

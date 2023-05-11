@@ -1,8 +1,7 @@
 import { PRODUCT_LIST } from "./constant"
 
-export const productList = (data) => {
+export const productList = () => {
     return {
-        type: PRODUCT_LIST,
-        data:data
+        type: PRODUCT_LIST
     }
 }
