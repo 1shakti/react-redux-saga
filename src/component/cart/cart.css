@@ -1,0 +1,38 @@
+.cart-container{
+    display: flex;
+    margin: 15px 0px 30px 30px;
+}
+
+.cart-container button{
+    display: flex;
+    padding: 15px;
+}
+
+
+.cart-container table {
+    flex: 65%;
+    border-collapse: collapse;
+}
+
+.cart-container table td{
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.cart-container img{
+    width: 60px;
+    height: 60px;
+}
+
+.price-details{
+    flex: 35%;
+    margin: 0px 30px;
+}
+
+.price-details .adjust-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
