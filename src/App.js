@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "./component/header/header";
-import Main from "./component/main/main";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Temp from "./pages/temp";
+import CartList from "./pages/cartList";
+import Home from "./pages/home";
 
 function App() {
 
@@ -10,10 +9,9 @@ function App() {
   return (
 
     <Router>
-    <Header />
-    <Main />      
       <Routes>
-        <Route path="/temp" element={<Temp />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cartList" element={<CartList />} />
       </Routes>
     </Router>
   );

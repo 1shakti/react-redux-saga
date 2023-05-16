@@ -9,12 +9,17 @@ export const cartData = (data = [],action) => {
 
     switch(action.type){
 
-        case ADD_TO_CART : 
-        return [action.data,...data];
+        case ADD_TO_CART :
+        let addData = data;
+        data.filter((item) => (item.id === action.data.id) && item).length > 0 ? 
+                    addData = addData
+             : addData = [action.data,...data]           
+        return addData;
  
         case REMOVE_FROM_CART:
-            data.length = data.length > 0 ? data.length - 1 : [];    
-        return [...data];
+        let rmvData = data;
+        rmvData = rmvData.filter((item) => (item.id !== action.data.id) && item);    
+        return rmvData;
 
         case EMPTY_CART:
         return [];
