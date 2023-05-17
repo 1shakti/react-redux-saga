@@ -12,15 +12,18 @@ export default function Cart() {
   return (
     <div className="cart-container">
         <table>
+            <thead>
             <tr>
-            <td>Image</td>
-            <td>Name</td>
-            <td>Brand</td>
-            <td>Color</td>
-            <td>Category</td>
-            <td>Price</td>
+            <td><b>Image</b></td>
+            <td><b>Name</b></td>
+            <td><b>Brand</b></td>
+            <td><b>Color</b></td>
+            <td><b>Category</b></td>
+            <td><b>Price</b></td>
             <td></td>                
             </tr>
+            </thead>
+            <tbody>
             {cartData.map((item, index) => (
         <tr className="cart-item" key={index}>
           <td><img src={item.photo} alt="" /></td> 
@@ -36,22 +39,25 @@ export default function Cart() {
           </td>
         </tr>
       ))}
+      </tbody>
         </table>
         <div className="price-details">
+                <div><h1>Price Details</h1></div>
+                <br/>   
                 <div className="adjust-price">
-                    <span>Amount</span>
+                    <span><b>Amount</b></span>
                     <span>{amount}</span>
                 </div>
                 <div className="adjust-price">
-                    <span>Discount</span>
+                    <span><b>Discount</b></span>
                     <span>{amount/10}</span>
                 </div>
                 <div className="adjust-price">
-                    <span>Tax</span>
+                    <span><b>Tax</b></span>
                     <span>0</span>
                 </div>
                 <div className="adjust-price">
-                    <span>Total Amount</span>
+                    <span><b>Total Amount</b></span>
                     <span>{amount-(amount/10)}</span>
                 </div>
         </div>

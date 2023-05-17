@@ -2,9 +2,25 @@
     background-color:aqua;
     height: 40px;
     padding: 5px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.search-box{
+    flex: 50%;
+    text-align: center;
+}
+
+.search-box input{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;  
 }
 
 .cart-div{
+    flex: 30%;
     float: right;
     position: relative;
 }
